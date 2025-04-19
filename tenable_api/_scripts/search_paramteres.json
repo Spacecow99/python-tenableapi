@@ -1,0 +1,1447 @@
+{
+    "sensor": {
+      "messageId": "product",
+      "label": "Product",
+      "value": "sensor",
+      "type": "options",
+      "options": {
+        "nessus": {
+          "label": "Nessus",
+          "value": "nessus"
+        },
+        "tenable_was": {
+          "label": "Web App Scanning",
+          "value": "tenable_was"
+        },
+        "tenable_nnm": {
+          "label": "Nessus Network Monitor",
+          "value": "tenable_nnm"
+        },
+        "tenable_lce": {
+          "label": "Log Correlation Engine",
+          "value": "tenable_lce"
+        },
+        "tenable_ot": {
+          "label": "Tenable OT Security",
+          "value": "tenable_ot"
+        }
+      }
+    },
+    "risk_factor": {
+      "messageId": "riskFactor",
+      "label": "CVSS v2 Severity",
+      "value": "risk_factor",
+      "type": "options",
+      "options": {
+        "critical": {
+          "label": "Critical",
+          "value": "critical"
+        },
+        "high": {
+          "label": "High",
+          "value": "high"
+        },
+        "medium": {
+          "label": "Medium",
+          "value": "medium"
+        },
+        "low": {
+          "label": "Low",
+          "value": "low"
+        },
+        "info": {
+          "label": "Info",
+          "value": "info"
+        }
+      }
+    },
+    "risk_factor_v3": {
+      "messageId": "cvssV3Score",
+      "label": "CVSS v3 Severity",
+      "value": "risk_factor_v3",
+      "type": "options",
+      "options": {
+        "critical": {
+          "label": "Critical",
+          "value": "critical"
+        },
+        "high": {
+          "label": "High",
+          "value": "high"
+        },
+        "medium": {
+          "label": "Medium",
+          "value": "medium"
+        },
+        "low": {
+          "label": "Low",
+          "value": "low"
+        },
+        "info": {
+          "label": "Info",
+          "value": "info"
+        }
+      }
+    },
+    "risk_factor_v4": {
+      "messageId": "cvssV4Score",
+      "label": "CVSS v4 Severity",
+      "value": "risk_factor_v4",
+      "type": "options",
+      "options": {
+        "critical": {
+          "label": "Critical",
+          "value": "critical"
+        },
+        "high": {
+          "label": "High",
+          "value": "high"
+        },
+        "medium": {
+          "label": "Medium",
+          "value": "medium"
+        },
+        "low": {
+          "label": "Low",
+          "value": "low"
+        },
+        "info": {
+          "label": "Info",
+          "value": "info"
+        }
+      }
+    },
+    "vpr_score": {
+      "messageId": "vprScore",
+      "label": "VPR Severity",
+      "value": "vpr_score",
+      "type": "options",
+      "options": {
+        "[9.0 TO 10.0]": {
+          "label": "Critical",
+          "value": "[9.0 TO 10.0]"
+        },
+        "[7.0 TO 8.9]": {
+          "label": "High",
+          "value": "[7.0 TO 8.9]"
+        },
+        "[4.0 TO 6.9]": {
+          "label": "Medium",
+          "value": "[4.0 TO 6.9]"
+        },
+        "[0.1 TO 3.9]": {
+          "label": "Low",
+          "value": "[0.1 TO 3.9]"
+        },
+        "0.0": {
+          "label": "Info",
+          "value": "0.0"
+        }
+      }
+    },
+    "cvss_score_source": {
+      "messageId": "cvssScoreSource",
+      "label": "CVSS Score Source",
+      "value": "cvss_score_source",
+      "type": "options",
+      "options": {
+        "manual": {
+          "label": "Manual",
+          "value": "manual"
+        }
+      }
+    },
+    "language_code": {
+      "messageId": "language",
+      "label": "Language",
+      "value": "language_code",
+      "type": "options",
+      "options": {
+        "en_US": {
+          "label": "English",
+          "value": "en_US"
+        },
+        "ja_JP": {
+          "label": "日本語",
+          "value": "ja_JP"
+        },
+        "zh_CN": {
+          "label": "简体中文",
+          "value": "zh_CN"
+        },
+        "zh_TW": {
+          "label": "繁體中文",
+          "value": "zh_TW"
+        }
+      }
+    },
+    "script_id": {
+      "messageId": "scriptId",
+      "label": "Plugin ID",
+      "value": "script_id",
+      "type": "text",
+      "placeholder": "10180"
+    },
+    "filename": {
+      "messageId": "filename",
+      "label": "Filename",
+      "value": "filename",
+      "type": "text",
+      "placeholder": "ping_host.nasl"
+    },
+    "script_name": {
+      "messageId": "scriptName",
+      "label": "Plugin Name",
+      "value": "script_name",
+      "type": "text",
+      "placeholder": "Ping the remote host"
+    },
+    "plugin_type": {
+      "messageId": "pluginType",
+      "label": "Type",
+      "value": "plugin_type",
+      "type": "options",
+      "options": {
+        "local": {
+          "label": "Local",
+          "value": "local"
+        },
+        "remote": {
+          "label": "Remote",
+          "value": "remote"
+        },
+        "combined": {
+          "label": "Combined",
+          "value": "combined"
+        }
+      }
+    },
+    "script_family": {
+      "messageId": "scriptFamily",
+      "label": "Family",
+      "value": "script_family",
+      "type": "options",
+      "options": {
+        "\"AIX Local Security Checks\"": {
+          "label": "AIX Local Security Checks",
+          "value": "\"AIX Local Security Checks\"",
+          "products": [
+            "nessus"
+          ]
+        },
+        "\"Alma Linux Local Security Checks\"": {
+          "label": "Alma Linux Local Security Checks",
+          "value": "\"Alma Linux Local Security Checks\"",
+          "products": [
+            "nessus"
+          ]
+        },
+        "\"Amazon Linux Local Security Checks\"": {
+          "label": "Amazon Linux Local Security Checks",
+          "value": "\"Amazon Linux Local Security Checks\"",
+          "products": [
+            "nessus"
+          ]
+        },
+        "\"Artificial Intelligence\"": {
+          "label": "Artificial Intelligence",
+          "value": "\"Artificial Intelligence\"",
+          "products": [
+            "nessus"
+          ]
+        },
+        "\"Authentication %26 Session\"": {
+          "label": "Authentication & Session",
+          "value": "\"Authentication %26 Session\"",
+          "products": [
+            "was"
+          ]
+        },
+        "\"Backdoors\"": {
+          "label": "Backdoors",
+          "value": "\"Backdoors\"",
+          "products": [
+            "nessus",
+            "nnm"
+          ]
+        },
+        "\"Brute force attacks\"": {
+          "label": "Brute force attacks",
+          "value": "\"Brute force attacks\"",
+          "products": [
+            "nessus"
+          ]
+        },
+        "\"CGI\"": {
+          "label": "CGI",
+          "value": "\"CGI\"",
+          "products": [
+            "nnm"
+          ]
+        },
+        "\"CGI abuses\"": {
+          "label": "CGI abuses",
+          "value": "\"CGI abuses\"",
+          "products": [
+            "nessus"
+          ]
+        },
+        "\"CGI abuses : XSS\"": {
+          "label": "CGI abuses : XSS",
+          "value": "\"CGI abuses : XSS\"",
+          "products": [
+            "nessus"
+          ]
+        },
+        "\"CISCO\"": {
+          "label": "CISCO",
+          "value": "\"CISCO\"",
+          "products": [
+            "nessus"
+          ]
+        },
+        "\"CentOS Local Security Checks\"": {
+          "label": "CentOS Local Security Checks",
+          "value": "\"CentOS Local Security Checks\"",
+          "products": [
+            "nessus"
+          ]
+        },
+        "\"Cloud Services\"": {
+          "label": "Cloud Services",
+          "value": "\"Cloud Services\"",
+          "products": [
+            "nnm",
+            "lce"
+          ]
+        },
+        "\"Code Execution\"": {
+          "label": "Code Execution",
+          "value": "\"Code Execution\"",
+          "products": [
+            "was"
+          ]
+        },
+        "\"Component Vulnerability\"": {
+          "label": "Component Vulnerability",
+          "value": "\"Component Vulnerability\"",
+          "products": [
+            "was"
+          ]
+        },
+        "\"Cross Site Request Forgery\"": {
+          "label": "Cross Site Request Forgery",
+          "value": "\"Cross Site Request Forgery\"",
+          "products": [
+            "was"
+          ]
+        },
+        "\"Cross Site Scripting\"": {
+          "label": "Cross Site Scripting",
+          "value": "\"Cross Site Scripting\"",
+          "products": [
+            "was"
+          ]
+        },
+        "\"DNS\"": {
+          "label": "DNS",
+          "value": "\"DNS\"",
+          "products": [
+            "nessus"
+          ]
+        },
+        "\"DNS Servers\"": {
+          "label": "DNS Servers",
+          "value": "\"DNS Servers\"",
+          "products": [
+            "nnm",
+            "lce"
+          ]
+        },
+        "\"Data Exposure\"": {
+          "label": "Data Exposure",
+          "value": "\"Data Exposure\"",
+          "products": [
+            "was"
+          ]
+        },
+        "\"Data Leakage\"": {
+          "label": "Data Leakage",
+          "value": "\"Data Leakage\"",
+          "products": [
+            "nnm"
+          ]
+        },
+        "\"Database\"": {
+          "label": "Database",
+          "value": "\"Database\"",
+          "products": [
+            "nnm",
+            "lce"
+          ]
+        },
+        "\"Databases\"": {
+          "label": "Databases",
+          "value": "\"Databases\"",
+          "products": [
+            "nessus"
+          ]
+        },
+        "\"Debian Local Security Checks\"": {
+          "label": "Debian Local Security Checks",
+          "value": "\"Debian Local Security Checks\"",
+          "products": [
+            "nessus"
+          ]
+        },
+        "\"Default Unix Accounts\"": {
+          "label": "Default Unix Accounts",
+          "value": "\"Default Unix Accounts\"",
+          "products": [
+            "nessus"
+          ]
+        },
+        "\"Denial of Service\"": {
+          "label": "Denial of Service",
+          "value": "\"Denial of Service\"",
+          "products": [
+            "nessus"
+          ]
+        },
+        "\"F5 Networks Local Security Checks\"": {
+          "label": "F5 Networks Local Security Checks",
+          "value": "\"F5 Networks Local Security Checks\"",
+          "products": [
+            "nessus"
+          ]
+        },
+        "\"FTP\"": {
+          "label": "FTP",
+          "value": "\"FTP\"",
+          "products": [
+            "nessus"
+          ]
+        },
+        "\"FTP Clients\"": {
+          "label": "FTP Clients",
+          "value": "\"FTP Clients\"",
+          "products": [
+            "nnm"
+          ]
+        },
+        "\"FTP Servers\"": {
+          "label": "FTP Servers",
+          "value": "\"FTP Servers\"",
+          "products": [
+            "nnm",
+            "lce"
+          ]
+        },
+        "\"Fedora Local Security Checks\"": {
+          "label": "Fedora Local Security Checks",
+          "value": "\"Fedora Local Security Checks\"",
+          "products": [
+            "nessus"
+          ]
+        },
+        "\"File Inclusion\"": {
+          "label": "File Inclusion",
+          "value": "\"File Inclusion\"",
+          "products": [
+            "was"
+          ]
+        },
+        "\"Finger\"": {
+          "label": "Finger",
+          "value": "\"Finger\"",
+          "products": [
+            "nnm"
+          ]
+        },
+        "\"Firewalls\"": {
+          "label": "Firewalls",
+          "value": "\"Firewalls\"",
+          "products": [
+            "nessus"
+          ]
+        },
+        "\"FreeBSD Local Security Checks\"": {
+          "label": "FreeBSD Local Security Checks",
+          "value": "\"FreeBSD Local Security Checks\"",
+          "products": [
+            "nessus"
+          ]
+        },
+        "\"Gain a shell remotely\"": {
+          "label": "Gain a shell remotely",
+          "value": "\"Gain a shell remotely\"",
+          "products": [
+            "nessus"
+          ]
+        },
+        "\"General\"": {
+          "label": "General",
+          "value": "\"General\"",
+          "products": [
+            "nessus",
+            "was"
+          ]
+        },
+        "\"Generic\"": {
+          "label": "Generic",
+          "value": "\"Generic\"",
+          "products": [
+            "nnm",
+            "lce"
+          ]
+        },
+        "\"Gentoo Local Security Checks\"": {
+          "label": "Gentoo Local Security Checks",
+          "value": "\"Gentoo Local Security Checks\"",
+          "products": [
+            "nessus"
+          ]
+        },
+        "\"HP-UX Local Security Checks\"": {
+          "label": "HP-UX Local Security Checks",
+          "value": "\"HP-UX Local Security Checks\"",
+          "products": [
+            "nessus"
+          ]
+        },
+        "\"Huawei Local Security Checks\"": {
+          "label": "Huawei Local Security Checks",
+          "value": "\"Huawei Local Security Checks\"",
+          "products": [
+            "nessus"
+          ]
+        },
+        "\"IMAP Servers\"": {
+          "label": "IMAP Servers",
+          "value": "\"IMAP Servers\"",
+          "products": [
+            "nnm",
+            "lce"
+          ]
+        },
+        "\"IRC Clients\"": {
+          "label": "IRC Clients",
+          "value": "\"IRC Clients\"",
+          "products": [
+            "nnm",
+            "lce"
+          ]
+        },
+        "\"IRC Servers\"": {
+          "label": "IRC Servers",
+          "value": "\"IRC Servers\"",
+          "products": [
+            "nnm"
+          ]
+        },
+        "\"Incident Response\"": {
+          "label": "Incident Response",
+          "value": "\"Incident Response\""
+        },
+        "\"Injection\"": {
+          "label": "Injection",
+          "value": "\"Injection\"",
+          "products": [
+            "was"
+          ]
+        },
+        "\"Internet Messengers\"": {
+          "label": "Internet Messengers",
+          "value": "\"Internet Messengers\"",
+          "products": [
+            "nnm"
+          ]
+        },
+        "\"Internet Services\"": {
+          "label": "Internet Services",
+          "value": "\"Internet Services\"",
+          "products": [
+            "nnm"
+          ]
+        },
+        "\"IoT\"": {
+          "label": "IoT",
+          "value": "\"IoT\"",
+          "products": [
+            "nnm"
+          ]
+        },
+        "\"Junos Local Security Checks\"": {
+          "label": "Junos Local Security Checks",
+          "value": "\"Junos Local Security Checks\"",
+          "products": [
+            "nessus"
+          ]
+        },
+        "\"MacOS X Local Security Checks\"": {
+          "label": "MacOS X Local Security Checks",
+          "value": "\"MacOS X Local Security Checks\"",
+          "products": [
+            "nessus"
+          ]
+        },
+        "\"Mandriva Local Security Checks\"": {
+          "label": "Mandriva Local Security Checks",
+          "value": "\"Mandriva Local Security Checks\"",
+          "products": [
+            "nessus"
+          ]
+        },
+        "\"Misc.\"": {
+          "label": "Misc.",
+          "value": "\"Misc.\"",
+          "products": [
+            "nessus"
+          ]
+        },
+        "\"Mobile Devices\"": {
+          "label": "Mobile Devices",
+          "value": "\"Mobile Devices\"",
+          "products": [
+            "nessus",
+            "nnm",
+            "lce"
+          ]
+        },
+        "\"Netware\"": {
+          "label": "Netware",
+          "value": "\"Netware\"",
+          "products": [
+            "nessus"
+          ]
+        },
+        "\"NewStart CGSL Local Security Checks\"": {
+          "label": "NewStart CGSL Local Security Checks",
+          "value": "\"NewStart CGSL Local Security Checks\"",
+          "products": [
+            "nessus"
+          ]
+        },
+        "\"Operating System Detection\"": {
+          "label": "Operating System Detection",
+          "value": "\"Operating System Detection\"",
+          "products": [
+            "nnm",
+            "lce"
+          ]
+        },
+        "\"Oracle Linux Local Security Checks\"": {
+          "label": "Oracle Linux Local Security Checks",
+          "value": "\"Oracle Linux Local Security Checks\"",
+          "products": [
+            "nessus"
+          ]
+        },
+        "\"OracleVM Local Security Checks\"": {
+          "label": "OracleVM Local Security Checks",
+          "value": "\"OracleVM Local Security Checks\"",
+          "products": [
+            "nessus"
+          ]
+        },
+        "\"POP Server\"": {
+          "label": "POP Server",
+          "value": "\"POP Server\"",
+          "products": [
+            "nnm"
+          ]
+        },
+        "\"Palo Alto Local Security Checks\"": {
+          "label": "Palo Alto Local Security Checks",
+          "value": "\"Palo Alto Local Security Checks\"",
+          "products": [
+            "nessus"
+          ]
+        },
+        "\"Peer-To-Peer File Sharing\"": {
+          "label": "Peer-To-Peer File Sharing",
+          "value": "\"Peer-To-Peer File Sharing\"",
+          "products": [
+            "nessus",
+            "nnm"
+          ]
+        },
+        "\"PhotonOS Local Security Checks\"": {
+          "label": "PhotonOS Local Security Checks",
+          "value": "\"PhotonOS Local Security Checks\"",
+          "products": [
+            "nessus"
+          ]
+        },
+        "\"Policy\"": {
+          "label": "Policy",
+          "value": "\"Policy\"",
+          "products": [
+            "nnm",
+            "lce"
+          ]
+        },
+        "\"Policy Compliance\"": {
+          "label": "Policy Compliance",
+          "value": "\"Policy Compliance\"",
+          "products": [
+            "nessus"
+          ]
+        },
+        "\"Port scanners\"": {
+          "label": "Port scanners",
+          "value": "\"Port scanners\"",
+          "products": [
+            "nessus"
+          ]
+        },
+        "\"RPC\"": {
+          "label": "RPC",
+          "value": "\"RPC\"",
+          "products": [
+            "nessus",
+            "nnm"
+          ]
+        },
+        "\"Red Hat Local Security Checks\"": {
+          "label": "Red Hat Local Security Checks",
+          "value": "\"Red Hat Local Security Checks\"",
+          "products": [
+            "nessus"
+          ]
+        },
+        "\"Rocky Linux Local Security Checks\"": {
+          "label": "Rocky Linux Local Security Checks",
+          "value": "\"Rocky Linux Local Security Checks\"",
+          "products": [
+            "nessus"
+          ]
+        },
+        "\"SCADA\"": {
+          "label": "SCADA",
+          "value": "\"SCADA\"",
+          "products": [
+            "nessus",
+            "nnm",
+            "ot"
+          ]
+        },
+        "\"SMTP Clients\"": {
+          "label": "SMTP Clients",
+          "value": "\"SMTP Clients\"",
+          "products": [
+            "nnm",
+            "lce"
+          ]
+        },
+        "\"SMTP Servers\"": {
+          "label": "SMTP Servers",
+          "value": "\"SMTP Servers\"",
+          "products": [
+            "nnm",
+            "lce"
+          ]
+        },
+        "\"SMTP problems\"": {
+          "label": "SMTP problems",
+          "value": "\"SMTP problems\"",
+          "products": [
+            "nessus"
+          ]
+        },
+        "\"SNMP\"": {
+          "label": "SNMP",
+          "value": "\"SNMP\"",
+          "products": [
+            "nessus",
+            "nnm"
+          ]
+        },
+        "\"SSH\"": {
+          "label": "SSH",
+          "value": "\"SSH\"",
+          "products": [
+            "nnm",
+            "lce"
+          ]
+        },
+        "\"Samba\"": {
+          "label": "Samba",
+          "value": "\"Samba\"",
+          "products": [
+            "nnm",
+            "lce"
+          ]
+        },
+        "\"Scientific Linux Local Security Checks\"": {
+          "label": "Scientific Linux Local Security Checks",
+          "value": "\"Scientific Linux Local Security Checks\"",
+          "products": [
+            "nessus"
+          ]
+        },
+        "\"Service detection\"": {
+          "label": "Service detection",
+          "value": "\"Service detection\"",
+          "products": [
+            "nessus"
+          ]
+        },
+        "\"Settings\"": {
+          "label": "Settings",
+          "value": "\"Settings\"",
+          "products": [
+            "nessus"
+          ]
+        },
+        "\"Slackware Local Security Checks\"": {
+          "label": "Slackware Local Security Checks",
+          "value": "\"Slackware Local Security Checks\"",
+          "products": [
+            "nessus"
+          ]
+        },
+        "\"Solaris Local Security Checks\"": {
+          "label": "Solaris Local Security Checks",
+          "value": "\"Solaris Local Security Checks\"",
+          "products": [
+            "nessus"
+          ]
+        },
+        "\"SuSE Local Security Checks\"": {
+          "label": "SuSE Local Security Checks",
+          "value": "\"SuSE Local Security Checks\"",
+          "products": [
+            "nessus"
+          ]
+        },
+        "\"Ubuntu Local Security Checks\"": {
+          "label": "Ubuntu Local Security Checks",
+          "value": "\"Ubuntu Local Security Checks\"",
+          "products": [
+            "nessus"
+          ]
+        },
+        "\"VMware ESX Local Security Checks\"": {
+          "label": "VMware ESX Local Security Checks",
+          "value": "\"VMware ESX Local Security Checks\"",
+          "products": [
+            "nessus"
+          ]
+        },
+        "\"Virtuozzo Local Security Checks\"": {
+          "label": "Virtuozzo Local Security Checks",
+          "value": "\"Virtuozzo Local Security Checks\"",
+          "products": [
+            "nessus"
+          ]
+        },
+        "\"Web Applications\"": {
+          "label": "Web Applications",
+          "value": "\"Web Applications\"",
+          "products": [
+            "was"
+          ]
+        },
+        "\"Web Clients\"": {
+          "label": "Web Clients",
+          "value": "\"Web Clients\"",
+          "products": [
+            "nnm",
+            "lce"
+          ]
+        },
+        "\"Web Servers\"": {
+          "label": "Web Servers",
+          "value": "\"Web Servers\"",
+          "products": [
+            "nessus",
+            "was",
+            "nnm",
+            "lce"
+          ]
+        },
+        "\"Windows\"": {
+          "label": "Windows",
+          "value": "\"Windows\"",
+          "products": [
+            "nessus"
+          ]
+        },
+        "\"Windows : Microsoft Bulletins\"": {
+          "label": "Windows : Microsoft Bulletins",
+          "value": "\"Windows : Microsoft Bulletins\"",
+          "products": [
+            "nessus"
+          ]
+        },
+        "\"Windows : User management\"": {
+          "label": "Windows : User management",
+          "value": "\"Windows : User management\"",
+          "products": [
+            "nessus"
+          ]
+        }
+      }
+    },
+    "plugin_publication_date": {
+      "messageId": "pluginPublicationDate",
+      "label": "Date Published",
+      "value": "plugin_publication_date",
+      "type": "date"
+    },
+    "plugin_modification_date": {
+      "messageId": "pluginModificationDate",
+      "label": "Date Modified",
+      "value": "plugin_modification_date",
+      "type": "date"
+    },
+    "agent": {
+      "messageId": "agent",
+      "label": "Agent Capable",
+      "value": "agent",
+      "type": "options",
+      "options": {
+        "windows": {
+          "label": "Windows",
+          "value": "windows"
+        },
+        "macosx": {
+          "label": "macOS",
+          "value": "macosx"
+        },
+        "unix": {
+          "label": "Unix",
+          "value": "unix"
+        }
+      }
+    },
+    "dependencies": {
+      "messageId": "dependencies",
+      "label": "Dependencies",
+      "value": "dependencies",
+      "type": "text",
+      "placeholder": "ping_host.nasl"
+    },
+    "in_the_news": {
+      "messageId": "inTheNews",
+      "label": "In the News",
+      "value": "in_the_news",
+      "type": "options",
+      "options": {
+        "true": {
+          "label": "Yes",
+          "messageId": "optionsYes",
+          "value": "true"
+        }
+      }
+    },
+    "enable_paranoid_mode": {
+      "messageId": "enableParanoidMode",
+      "label": "Enable Paranoid Mode",
+      "value": "enable_paranoid_mode",
+      "type": "options",
+      "options": {
+        "true": {
+          "label": "Yes",
+          "messageId": "optionsYes",
+          "value": true
+        }
+      }
+    },
+    "enable_default_logins": {
+      "messageId": "enableDefaultLogins",
+      "label": "Enable Default Logins",
+      "value": "enable_default_logins",
+      "type": "options",
+      "options": {
+        "true": {
+          "label": "Yes",
+          "messageId": "optionsYes",
+          "value": true
+        }
+      }
+    },
+    "thorough_tests": {
+      "messageId": "thoroughTests",
+      "label": "Enable Thorough Tests",
+      "value": "thorough_tests",
+      "type": "options",
+      "options": {
+        "true": {
+          "label": "Yes",
+          "messageId": "optionsYes",
+          "value": true
+        },
+        "false": {
+          "label": "No",
+          "messageId": "optionsNo",
+          "value": false
+        }
+      }
+    },
+    "enable_cgi_scanning": {
+      "messageId": "enableCgiScanning",
+      "label": "Enable CGI Scanning",
+      "value": "enable_cgi_scanning",
+      "type": "options",
+      "options": {
+        "true": {
+          "label": "Yes",
+          "messageId": "optionsYes",
+          "value": true
+        },
+        "false": {
+          "label": "No",
+          "messageId": "optionsNo",
+          "value": false
+        }
+      }
+    },
+    "exploit_available": {
+      "messageId": "exploitAvailable",
+      "label": "Exploit Available",
+      "value": "exploit_available",
+      "type": "options",
+      "options": {
+        "true": {
+          "label": "Yes",
+          "messageId": "optionsYes",
+          "value": "true"
+        },
+        "false": {
+          "label": "No",
+          "messageId": "optionsNo",
+          "value": "false"
+        }
+      }
+    },
+    "cisa_known_exploited": {
+      "messageId": "cisaKnownExploited",
+      "label": "CISA Known Exploited",
+      "value": "cisa_known_exploited",
+      "type": "options",
+      "options": {
+        "\"references.id.keyword\"": {
+          "label": "Yes",
+          "messageId": "optionsYes",
+          "value": "\"references.id.keyword\""
+        }
+      },
+      "nested": {
+        "field": "references",
+        "value": "_exists_",
+        "filter": "references.id_type.keyword:CISA-KNOWN-EXPLOITED"
+      }
+    },
+    "cves": {
+      "messageId": "cves",
+      "label": "CVE",
+      "value": "cves",
+      "type": "text",
+      "placeholder": "CVE-2017-5715, CVE-2017-5753",
+      "nested": {
+        "field": "references",
+        "value": "references.id.keyword",
+        "filter": "references.id_type.keyword:cve"
+      }
+    },
+    "bids": {
+      "messageId": "bids",
+      "label": "Bugtraq",
+      "value": "bids",
+      "type": "text",
+      "placeholder": "11405, 11404",
+      "nested": {
+        "field": "references",
+        "value": "references.id.keyword",
+        "filter": "references.id_type.keyword:bid"
+      }
+    },
+    "cpe": {
+      "messageId": "cpe",
+      "label": "CPE",
+      "value": "cpe",
+      "type": "text",
+      "placeholder": "\"cpe:/a:apple:software_update\""
+    },
+    "required_keys": {
+      "messageId": "requiredKeys",
+      "label": "Required KB Items",
+      "value": "required_keys",
+      "type": "text",
+      "placeholder": "\"Host/local_checks_enabled\""
+    },
+    "excluded_keys": {
+      "messageId": "excludedKeys",
+      "label": "Excluded KB Items",
+      "value": "excluded_keys",
+      "type": "text",
+      "placeholder": "\"/tmp/CVE-2011-3368\""
+    },
+    "script_required_ports": {
+      "messageId": "scriptRequiredPorts",
+      "label": "Required Ports",
+      "value": "script_required_ports",
+      "type": "text",
+      "placeholder": "\"Host/RedHat/release\""
+    },
+    "xrefs.CWE": {
+      "messageId": "xrefsCWE",
+      "label": "CWE",
+      "value": "xrefs.CWE",
+      "type": "text",
+      "placeholder": "\"20\"",
+      "nested": {
+        "field": "references",
+        "value": "references.id.keyword",
+        "filter": "references.id_type.keyword:CWE"
+      }
+    },
+    "xrefs.WASC": {
+      "messageId": "xrefsWASC",
+      "label": "WASC",
+      "value": "xrefs.WASC",
+      "type": "text",
+      "placeholder": "\"OS Commanding\"",
+      "nested": {
+        "field": "references",
+        "value": "references.id.keyword",
+        "filter": "references.id_type.keyword:WASC"
+      }
+    },
+    "xrefs.OWASP": {
+      "messageId": "xrefsOWASP",
+      "label": "OWASP",
+      "value": "xrefs.OWASP",
+      "type": "text",
+      "placeholder": "2017-A1",
+      "nested": {
+        "field": "references",
+        "value": "references.id.keyword",
+        "filter": "references.id_type.keyword:OWASP"
+      }
+    },
+    "xrefs.OWASP_API": {
+      "messageId": "xrefsOWASPapi",
+      "label": "OWASP API",
+      "value": "xrefs.OWASP_API",
+      "type": "text",
+      "placeholder": "2019-API7",
+      "nested": {
+        "field": "references",
+        "value": "references.id.keyword",
+        "filter": "references.id_type.keyword:OWASP_API"
+      }
+    },
+    "xrefs.ALAS": {
+      "messageId": "xrefsALAS",
+      "label": "ALAS",
+      "value": "xrefs.ALAS",
+      "type": "text",
+      "placeholder": "2014-418",
+      "nested": {
+        "field": "references",
+        "value": "references.id.keyword",
+        "filter": "references.id_type.keyword:ALAS"
+      }
+    },
+    "xrefs.CISCO-BUG-ID": {
+      "messageId": "xrefsCISCOBugId",
+      "label": "Cisco Bug ID",
+      "value": "xrefs.CISCO-BUG-ID",
+      "type": "text",
+      "placeholder": "\"CSCva13456\"",
+      "nested": {
+        "field": "references",
+        "value": "references.id.keyword",
+        "filter": "references.id_type.keyword:CISCO-BUG-ID"
+      }
+    },
+    "xrefs.CISCO-SA": {
+      "messageId": "xrefsCISCOsa",
+      "label": "Cisco Security Advisory",
+      "value": "xrefs.CISCO-SA",
+      "type": "text",
+      "placeholder": "cisco-sa-20161116-esa1",
+      "nested": {
+        "field": "references",
+        "value": "references.id.keyword",
+        "filter": "references.id_type.keyword:CISCO-SA"
+      }
+    },
+    "xrefs.CISCO-SR": {
+      "messageId": "xrefsCISCOsr",
+      "label": "Cisco Security Response",
+      "value": "xrefs.CISCO-SR",
+      "type": "text",
+      "placeholder": "cisco-sr-20070926-lb",
+      "nested": {
+        "field": "references",
+        "value": "references.id.keyword",
+        "filter": "references.id_type.keyword:CISCO-SR"
+      }
+    },
+    "xrefs.RHSA": {
+      "messageId": "xrefsRHSA",
+      "label": "RHSA",
+      "value": "xrefs.RHSA",
+      "type": "text",
+      "placeholder": "\"2013:0855\"",
+      "nested": {
+        "field": "references",
+        "value": "references.id.keyword",
+        "filter": "references.id_type.keyword:RHSA"
+      }
+    },
+    "xrefs.FEDORA": {
+      "messageId": "xrefsFEDORA",
+      "label": "Fedora Security Advisories",
+      "value": "xrefs.FEDORA",
+      "type": "text",
+      "placeholder": "2016-6a0d540088",
+      "nested": {
+        "field": "references",
+        "value": "references.id.keyword",
+        "filter": "references.id_type.keyword:FEDORA"
+      }
+    },
+    "xrefs.MSKB": {
+      "messageId": "xrefsMSKB",
+      "label": "Microsoft KB",
+      "value": "xrefs.MSKB",
+      "type": "text",
+      "placeholder": "\"4054170\"",
+      "nested": {
+        "field": "references",
+        "value": "references.id.keyword",
+        "filter": "references.id_type.keyword:MSKB"
+      }
+    },
+    "xrefs.USN": {
+      "messageId": "xrefsUSN",
+      "label": "Ubuntu Security Notices",
+      "value": "xrefs.USN",
+      "type": "text",
+      "placeholder": "1197-6",
+      "nested": {
+        "field": "references",
+        "value": "references.id.keyword",
+        "filter": "references.id_type.keyword:USN"
+      }
+    },
+    "xrefs.SECUNIA": {
+      "messageId": "xrefsSECUNIA",
+      "label": "Secunia Advisories",
+      "value": "xrefs.SECUNIA",
+      "type": "text",
+      "placeholder": "\"15411\"",
+      "nested": {
+        "field": "references",
+        "value": "references.id.keyword",
+        "filter": "references.id_type.keyword:SECUNIA"
+      }
+    },
+    "xrefs.VMSA": {
+      "messageId": "xrefsVMSA",
+      "label": "VMware Security Advisories",
+      "value": "xrefs.VMSA",
+      "type": "text",
+      "placeholder": "2013-0013",
+      "nested": {
+        "field": "references",
+        "value": "references.id.keyword",
+        "filter": "references.id_type.keyword:VMSA"
+      }
+    },
+    "xrefs.CERT": {
+      "messageId": "xrefsCERT",
+      "label": "CERT",
+      "value": "xrefs.CERT",
+      "type": "text",
+      "placeholder": "\"104280\"",
+      "nested": {
+        "field": "references",
+        "value": "references.id.keyword",
+        "filter": "references.id_type.keyword:CERT"
+      }
+    },
+    "xrefs.CERT-CC": {
+      "messageId": "xrefsCERTcc",
+      "label": "CERT-CC",
+      "value": "xrefs.CERT-CC",
+      "type": "text",
+      "placeholder": "2000-20",
+      "nested": {
+        "field": "references",
+        "value": "references.id.keyword",
+        "filter": "references.id_type.keyword:CERT-CC"
+      }
+    },
+    "xrefs.IAVA": {
+      "messageId": "xrefsIAVA",
+      "label": "IAVA",
+      "value": "xrefs.IAVA",
+      "type": "text",
+      "placeholder": "2015-A-0092",
+      "nested": {
+        "field": "references",
+        "value": "references.id.keyword",
+        "filter": "references.id_type.keyword:IAVA"
+      }
+    },
+    "xrefs.IAVB": {
+      "messageId": "xrefsIAVB",
+      "label": "IAVB",
+      "value": "xrefs.IAVB",
+      "type": "text",
+      "placeholder": "2021-B-0020",
+      "nested": {
+        "field": "references",
+        "value": "references.id.keyword",
+        "filter": "references.id_type.keyword:IAVB"
+      }
+    },
+    "xrefs.EDB-ID": {
+      "messageId": "xrefsEDBid",
+      "label": "Exploit Database",
+      "value": "xrefs.EDB-ID",
+      "type": "text",
+      "placeholder": "\"18641\"",
+      "nested": {
+        "field": "references",
+        "value": "references.id.keyword",
+        "filter": "references.id_type.keyword:EDB-ID"
+      }
+    },
+    "asset_inventory": {
+      "messageId": "assetInventory",
+      "label": "Asset Inventory",
+      "value": "asset_inventory",
+      "type": "options",
+      "options": {
+        "true": {
+          "label": "Yes",
+          "messageId": "optionsYes",
+          "value": "true"
+        }
+      }
+    },
+    "hardware_inventory": {
+      "messageId": "hardwareInventory",
+      "label": "Hardware Inventory",
+      "value": "hardware_inventory",
+      "type": "options",
+      "options": {
+        "true": {
+          "label": "Yes",
+          "messageId": "optionsYes",
+          "value": "true"
+        }
+      }
+    },
+    "os_identification": {
+      "messageId": "osIdentification",
+      "label": "OS Identification",
+      "value": "os_identification",
+      "type": "options",
+      "options": {
+        "true": {
+          "label": "Yes",
+          "messageId": "optionsYes",
+          "value": "true"
+        }
+      }
+    },
+    "policy": {
+      "messageId": "policy",
+      "label": "WAS Scan Template",
+      "value": "policy",
+      "type": "options",
+      "options": {
+        "api": {
+          "label": "API",
+          "value": "api"
+        },
+        "basic": {
+          "label": "Basic",
+          "value": "basic"
+        },
+        "config_audit": {
+          "label": "Config Audit",
+          "value": "config_audit"
+        },
+        "full": {
+          "label": "Full",
+          "value": "full"
+        },
+        "overview": {
+          "label": "Overview",
+          "value": "overview"
+        },
+        "pci": {
+          "label": "PCI",
+          "value": "pci"
+        },
+        "scan": {
+          "label": "Scan",
+          "value": "scan"
+        },
+        "ssl_tls": {
+          "label": "SSL_TLS",
+          "value": "ssl_tls"
+        },
+        "log4shell": {
+          "label": "Log4Shell",
+          "value": "log4shell"
+        }
+      }
+    },
+    "supported_sensors": {
+      "messageId": "supportedSensors",
+      "label": "Supported Sensors",
+      "value": "supported_sensors",
+      "type": "options",
+      "options": {
+        "nessus": {
+          "label": "Nessus",
+          "value": "nessus"
+        },
+        "nessus_agent": {
+          "label": "Nessus Agent",
+          "value": "nessus_agent"
+        },
+        "agentless_assessment": {
+          "label": "Agentless Assessment",
+          "value": "agentless_assessment"
+        },
+        "fa_azure": {
+          "label": "Frictionless Assessment Azure",
+          "value": "fa_azure"
+        },
+        "fa_aws": {
+          "label": "Frictionless Assessment AWS",
+          "value": "fa_aws"
+        },
+        "fa_agent": {
+          "label": "Frictionless Assessment Agent",
+          "value": "fa_agent"
+        },
+        "ot_security": {
+          "label": "Tenable OT Security",
+          "value": "ot_security"
+        },
+        "continuous_assessment": {
+          "label": "Continuous Assessment",
+          "value": "continuous_assessment"
+        }
+      }
+    },
+    "vendor_severity": {
+      "messageId": "vendorSeverity",
+      "label": "Vendor Severity",
+      "value": "vendor_severity",
+      "type": "text",
+      "placeholder": "\"Moderate\""
+    }
+  }
