@@ -1,14 +1,12 @@
 
-"""
-
-"""
 
 import requests
 
 
 class Audits(requests.Session):
     """
-    Audits
+    requests.Session wrapper around Audits api endpoint.
+    https://www.tenable.com/audits/api/v1/
     """
     
     def __init__(self, *args, **kwargs):
@@ -21,7 +19,9 @@ class Audits(requests.Session):
 
     def all(self, page=1):
         """
-        Get all audits
+        Get all audits.
+        https://www.tenable.com/audits/api/v1/all
+        
         args:
             page (int): page number
         """
@@ -32,6 +32,8 @@ class Audits(requests.Session):
     def newest(self, page=1):
         """
         Get newest audits
+        https://www.tenable.com/audits/api/v1/all?sort=newest
+        
         args:
             page (int): page number
         """
@@ -42,6 +44,8 @@ class Audits(requests.Session):
     def updates(self, page=1):
         """
         Get updated audits
+        https://www.tenable.com/audits/api/v1/all?sort=updates
+        
         args:
             page (int): page number
         """
@@ -52,6 +56,8 @@ class Audits(requests.Session):
     def search(self, q, page=1):
         """
         Search for audits
+        https://www.tenable.com/audits/api/v1/all?q=search
+        
         args:
             q (str): search query
             page (int): page number
@@ -63,6 +69,8 @@ class Audits(requests.Session):
     def references(self, page=1):
         """
         Get references
+        https://www.tenable.com/audits/api/v1/references
+        
         args:
             page (int): page number
         """
@@ -73,6 +81,8 @@ class Audits(requests.Session):
     def authorities(self, page=1):
         """
         Get authorities
+        https://www.tenable.com/audits/api/v1/authorities
+
         args:
             page (int): page number
         """

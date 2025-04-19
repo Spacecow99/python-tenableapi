@@ -1,9 +1,5 @@
 
 
-"""
-
-"""
-
 import requests
 
 
@@ -23,6 +19,8 @@ class AttackPathTechniques(requests.Session):
     def all(self, page=1):
         """
         Get all attack path techniques
+        https://www.tenable.com/attack-path-techniques/api/v1/all
+
         args:
             page (int): page number
         """
@@ -33,6 +31,8 @@ class AttackPathTechniques(requests.Session):
     def search(self, q, page=1, sort=""):
         """
         Search for attack path techniques
+        https://www.tenable.com/attack-path-techniques/api/v1/search
+
         args:
             q (str): search query
             page (int): page number

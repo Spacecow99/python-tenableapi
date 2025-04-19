@@ -1,9 +1,5 @@
 
 
-"""
-
-"""
-
 import re
 
 import requests
@@ -11,7 +7,8 @@ import requests
 
 class CVE(requests.Session):
     """
-    Tenable CVE API
+    requests.Session wrapper around CVE api endpoint.
+    https://www.tenable.com/cve/api/v1/
     """
 
     def __init__(self, *args, **kwargs):
@@ -24,10 +21,14 @@ class CVE(requests.Session):
 
     def search(self, q: str, page: int = 1):
         """
-        Search for CVEs
+        Search for CVE details.
+        https://www.tenable.com/cve/api/v1/search
+        
         args:
-            q: str
-            page: int
+            q (str): search query
+            page (int): page number
+        returns:
+            dict: CVE details
         """
         endpoint = self.url + 'search?q=' + q + '&page=' + str(page)
         response = requests.get(endpoint)
@@ -35,9 +36,13 @@ class CVE(requests.Session):
 
     def newest(self, page: int = 1):
         """
-        Get newest CVEs
+        Get newest CVE details.
+        https://www.tenable.com/cve/api/v1?sort=newest
+        
         args:
-            page: int
+            page (int): page number
+        returns:
+            dict: CVE details
         """
         endpoint = self.url + '?sort=newest' + '&page=' + str(page)
         response = requests.get(endpoint)
@@ -45,9 +50,13 @@ class CVE(requests.Session):
 
     def updated(self, page: int = 1):
         """
-        Get updated CVEs
+        Get recently updated CVE details.
+        https://www.tenable.com/cve/api/v1?sort=updated
+        
         args:
-            page: int
+            page (int): page number
+        returns:
+            dict: CVE details
         """
         endpoint = self.url + '?sort=updated' + '&page=' + str(page)
         response = requests.get(endpoint)
@@ -55,9 +64,13 @@ class CVE(requests.Session):
 
     def all(self, page: int = 1):
         """
-        Get all CVEs
-        args
-            page: int
+        Get all CVE details.
+        https://www.tenable.com/cve/api/v1
+
+        args:
+            page (int): page number.
+        returns:
+            dict: CVE details
         """
         endpoint = self.url + '?page=' + str(page)
         response = requests.get(endpoint)
@@ -65,11 +78,16 @@ class CVE(requests.Session):
 
     def cve(self, cve_id):
         """
-        Get CVE
+        Get specific CVE's details.
+        https://www.tenable.com/cve/api/v1/CVE-2017-0001
+        
         args:
-            cve_id: str
+            cve_id (str): CVE ID in the format CVE-YYYY-NNNN
+        Returns:
+            dict: CVE details
+        Raises:
+            ValueError: If the CVE ID format is invalid
         """
-        # TODO: Add a check for the cve_id format
         if not re.match(r'^CVE-\d{4}-\d{4,}$', cve_id):
             raise ValueError('Invalid CVE ID format')
 
@@ -80,10 +98,15 @@ class CVE(requests.Session):
     def plugins(self, cve_id):
         """
         Get CVE related plugins
+        https://www.tenable.com/cve/api/v1/CVE-2017-0001/plugins
+        
         args:
-            cve_id: str
+            cve_id (str): CVE ID in the format CVE-YYYY-NNNN
+        Returns:
+            dict: CVE related plugins
+        Raises:
+            ValueError: If the CVE ID format is invalid
         """
-        # TODO: Add a check for the cve_id format
         if not re.match(r'^CVE-\d{4}-\d{4,}$', cve_id):
             raise ValueError('Invalid CVE ID format')
 

@@ -1,25 +1,12 @@
 
 
-"""
-
-"""
-
 import requests
-
-
-
-def format_search_query(*args):
-    """
-    Format search query
-    args:
-        args (tuple): search query
-    """
-    return ' AND '.join(args)
 
 
 class Plugins(requests.Session):
     """
     Tenable Plugins API
+    https://www.tenable.com/plugins/api/v1/
     """
 
     def __init__(self, *args, **kwargs):
@@ -33,6 +20,8 @@ class Plugins(requests.Session):
     def all(self, page=1, sort=""):
         """
         Get all plugins
+        https://www.tenable.com/plugins/api/v1/all
+
         args:
             page (int): page number
             sort (str): sort by newest or updated
@@ -44,6 +33,8 @@ class Plugins(requests.Session):
     def newest(self, page=1):
         """
         Get newest plugins
+        https://www.tenable.com/plugins/api/v1/all?sort=newest
+        
         args:
             page (int): page number
         """
@@ -54,6 +45,8 @@ class Plugins(requests.Session):
     def updated(self, page=1):
         """
         Get updated plugins
+        https://www.tenable.com/plugins/api/v1/all?sort=updated
+        
         args:
             page (int): page number
         """
@@ -64,8 +57,10 @@ class Plugins(requests.Session):
     def families(self, type):
         """ 
         Get plugin families
+        https://www.tenable.com/plugins/api/v1/families
+        
         args:
-            type (str): 
+            type (str): product type
         """
         endpoint = self.url + 'families?type=' + type
         response = requests.get(endpoint)
@@ -74,9 +69,11 @@ class Plugins(requests.Session):
     def family(self, type, family, page=1):
         """
         Get plugin family
+        https://www.tenable.com/plugins/api/v1/families/type/family
+        
         args:
-            type (str): 
-            family (str): 
+            type (str): product type
+            family (str): family name
             page (int): page number
         """
         endpoint = self.url + type + '/families/' + family + "?page=" + str(page)
@@ -86,9 +83,11 @@ class Plugins(requests.Session):
     def plugin(self, family, plugin_id):
         """ 
         Get plugin
+        https://www.tenable.com/plugins/api/v1/families/family/plugin_id
+        
         args:
-            family (str): 
-            plugin_id (str):
+            family (str): family name
+            plugin_id (str): plugin id
         """
         endpoint = self.url + family + '/' + plugin_id
         response = requests.get(endpoint)
@@ -97,6 +96,8 @@ class Plugins(requests.Session):
     def search(self, q, page=1):
         """
         Search plugins
+        https://www.tenable.com/plugins/api/v1/search
+        
         args:
             q (str): query
             page (int): page number

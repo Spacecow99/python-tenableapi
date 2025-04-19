@@ -21,7 +21,7 @@ def main():
     parser = argparse.ArgumentParser(prog="tenable_api")
     parser.add_argument("--version", action="version", version=f"{__version__}")
     subparsers = parser.add_subparsers(
-        dest="api", description="x", help='subcommand help')
+        dest="api", description="APIs to invoke", help='subcommand help')
 
     ## Attack Path Techniques CLI parser
     #############################################################################
@@ -49,7 +49,7 @@ def main():
     )
     apt_search.add_argument(
         "page", type=int, default=1, help="Page number to query"
-    ) 
+    )
     apt_search.add_argument(
         "sort", type=str, default="", help="Sort by"
     )
@@ -58,7 +58,8 @@ def main():
     #############################################################################
     audits = subparsers.add_parser("audits", help="Audits")
     audits_subparsers = audits.add_subparsers(
-        dest="endpoint", help='subcommand help'
+        dest="endpoint", help='subcommand help',
+        description="Subcommands for audits"
     )
     # `tenable_api audits all` subparser
     audits_all = audits_subparsers.add_parser("all", help="Get all audits")
@@ -108,7 +109,8 @@ def main():
     #############################################################################
     cve = subparsers.add_parser("cve", help="CVE")
     cve_subparsers = cve.add_subparsers(
-        dest="endpoint", help='subcommand help'
+        dest="endpoint", help='subcommand help',
+        description="Subcommands for CVE"
     )
     # `tenable_api cve all` subparser
     cve_all = cve_subparsers.add_parser("all", help="Get all CVEs")
@@ -150,7 +152,8 @@ def main():
     #############################################################################
     indicators = subparsers.add_parser("indicators", help="Indicators")
     indicators_subparsers = indicators.add_subparsers(
-        dest="endpoint", help='subcommand help'
+        dest="endpoint", help='subcommand help',
+        description="Subcommands for indicators"
     )
     # `tenable_api indicators search` subparser
     indicators_search = indicators_subparsers.add_parser(
@@ -181,7 +184,8 @@ def main():
     #############################################################################
     plugins = subparsers.add_parser("plugins", help="Plugins")
     plugins_subparsers = plugins.add_subparsers(
-        dest="endpoint", help='subcommand help'
+        dest="endpoint", help='subcommand help',
+        description="Subcommands for plugins"
     )
     # `tenable_api plugins all` subparser
     plugins_all = plugins_subparsers.add_parser("all", help="Get all plugins")
