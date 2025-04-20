@@ -13,3 +13,21 @@ from tenable_api.cve import CVE
 from tenable_api.indicators import Indicators
 from tenable_api.plugins import Plugins
 from tenable_api.plugins import query
+
+
+class QueryParamter():
+    """
+    Base class for all query parameters
+    """
+    def __call__(self):
+        raise NotImplementedError("Subclasses must implement this method")
+
+
+class Query():
+    """
+    Format search query
+    args:
+        args (tuple): search query
+    """
+    def __call__(self, *args: QueryParamter):
+        return ' AND '.join(args)
